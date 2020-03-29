@@ -236,3 +236,46 @@
      width: 100%;
      height: 1040rpx;
  }
+
+
+
+
+.catalogue .course-title-item text{
+    font-weight: bold;
+}
+
+.catalogue  .linellae{
+      width: 10rpx;
+       height: 32rpx;
+      margin-right: 30rpx;
+      background-color: #999999;
+  }
+
+
+
+.catalogue .catalogue-play{
+    margin-top: 32rpx;
+
+}
+
+
+.catalogue .catalogue-play .try1{
+    color: #666666;
+}
+
+.catalogue .catalogue-play .try2{
+    border-radius: 8rpx;
+    background-color: #9FBFFF;
+    color: #fff;
+}
+
+.catalogue-play .p-fx-row-sa-c{
+    width: 94rpx;
+    height: 38rpx;
+      padding: 4rpx 14rpx;
+}
+
+
+.catalogue .catalogue-play .try2 text {
+    font-size: 20rpx;   
+}

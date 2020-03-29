@@ -7,7 +7,15 @@ Page({
     data: {
         isCollect:false,
         sel:1,
-       
+        isBuy:false,
+        lockPlay: [
+            { id: 1, isSee: true},
+            { id: 2, isSee: false},
+            { id: 3, isSee: false},
+            { id: 4, isSee: false},
+            { id: 5, isSee: false},
+            { id: 6, isSee: false},
+        ],
     },
 
 

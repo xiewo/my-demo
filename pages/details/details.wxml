@@ -69,13 +69,14 @@
                <text ></text>
             </view>
             <view class='p-fx-col-d-c  message-title-list {{sel==2?"message-selact":""}} ' bindtap='setChange' data-sel="2" >
-              <text>课程信息</text>
+              <text>课程目录</text>
                <text></text>
             </view>
          </view>
 
          <!-- 课程名称  -->
-         <view class='course-title' >
+       
+         <view class='course-title' wx:if="{{sel==1}}" >
              <view>
            
                <view class='p-fx-row-d-c course-title-item'>
@@ -116,7 +117,28 @@
             <view class='footer-photo'>
                 <image src='../../static/img/ditu.png'></image>
             </view>
-        </view>   
+        </view>  
+        <view wx:else>
+            <view class='catalogue'>
+            
+                 <view class='p-fx-row-d-c course-title-item'>
+                    <text class=' linellae'></text>
+                    <text>课程目录：</text>
+               </view>
+                <view  class='p-fx-row-sb catalogue-play' wx:for='{{lockPlay}}' wx:key='id'>
+                    <view>
+                       {{item.id}}.课程课程课程课程课程课程课程...
+                    </view>
+                    <view class='p-fx-row-sa-c iconfont {{isBuy?"icon-bofang2 try1":item.isSee?"icon-bofang  try2":"icon-suo"}}'>
+                        <text wx:if='{{item.isSee && !isBuy}}'>试看</text>
+                    </view>
+                </view>
+            
+            </view>
+               
+        
+        
+        </view> 
     </view>
 
 </view>
