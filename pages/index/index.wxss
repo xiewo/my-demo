@@ -1,0 +1,298 @@
+.top-tab{
+  color: #999999;
+  font-size: 32rpx;
+  font-weight: bold;
+}
+
+.top-tab-item{
+  width: 25%;
+  text-align: center;
+  padding: 25rpx 0;
+}
+
+.top-tab-sel{
+  color: #49B4B1;
+  border-bottom: 1rpx solid  #49B4B1;
+}
+
+.page-content-title{
+  display: flex;
+  align-items: center;
+  font-size: 36rpx;
+  font-weight: bold;
+  padding: 32rpx 0;
+  box-sizing: border-box;
+}
+
+.recommend-title{
+  width: 10rpx;
+  height: 32rpx;
+  background-color: #49B4B1;
+  margin-right: 24rpx;
+}
+
+/* 为你推荐模块图片样式 */
+.recommend-imgs{
+   height: 460rpx;
+   color: #FFFFFF;
+   font-size: 28rpx;
+   margin-bottom: 30rpx;
+}
+
+.recommend-lt{
+   margin-right: 10rpx;
+   height: 100%;
+   position: relative;
+}
+
+.recommend-lt image{
+  width: 100%;
+  height: 100%;
+}
+
+.recommend-rt{
+  height: 100%;
+}
+.recommend-rt .recommend-rt-item{
+  width: 100%;
+  height: 226rpx;
+  margin-bottom: 10rpx;
+  position: relative;
+}
+.recommend-rt image{
+  width:100%;
+  height:100%;
+}
+
+
+.recommend-imgs .course-title{
+  position:absolute;
+  top: 28rpx ;
+  left: 28rpx;
+}
+
+
+.recommend-imgs  .watch-num{
+   font-size: 20rpx;
+}
+ .recommend-imgs .label-title{
+   position: absolute;
+   bottom: 32rpx;
+   right: 28rpx;
+   background-color: #DE595E;
+   padding: 8rpx 16rpx;
+   border-radius: 8rpx;
+ }
+
+
+/* 优惠  */
+ .discounts{
+   font-size: 24rpx;
+   font-weight: bold;
+   color: #333;
+   margin-bottom: 30rpx;
+ }
+
+ .discounts image{
+   width: 328rpx;
+   height: 198rpx;
+ }
+.discounts .price{
+  color:#DE595E;
+}
+.discounts  .img-box{
+  margin-bottom: 20rpx;
+  position: relative;
+}
+
+ .discounts .schedule{
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 120rpx;
+   height: 44rpx;
+   background-color: #DE595E;
+   border-radius:  0  0 42rpx 0; 
+   text-align:center;
+   line-height: 44rpx;
+   color: #fff;
+ }
+
+
+ /* 热门 */
+.hotspot-item{
+    width: 100%;
+    height: 100%;
+    border-bottom: 1rpx solid #ddd;
+    margin-bottom: 30rpx;
+    padding-bottom: 36rpx;
+    font-size: 28rpx;
+}
+
+.hotspot-item .hotspot-item-img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+
+.hotspot-item .hotspot-item-img image{
+    width: 240rpx;
+    height: 162rpx;
+}
+
+.hotspot-item .hotspot-item-img text{
+    width: 240rpx;
+    height: 44rpx;
+    background:rgba(103,103,103,1);
+    opacity:0.62;
+    border-radius: 8rpx;
+    position: absolute;
+    left: 0 ;
+    bottom: 0;    
+    text-align: center; 
+    font-size: 22rpx;
+    line-height: 44rpx;
+}
+.hotspot-item-explain{
+    width: 100%;
+    height: 100%;
+
+}
+
+.hotspot-item-explain .hotspot-explain-text{
+    width: 392rpx;
+    height: 80rpx;
+    font-weight: bold;
+    color: #333333;
+    /* 在微信中如果文本要显示多行 那么就要这么配置  */
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-all;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+
+}
+
+.explain-text-price{
+    margin-top: 20rpx;
+}
+
+.explain-text-price{
+    color: #666666;
+}
+
+.explain-text-price .explain-text-p :first-child{
+    color: #DE595E;
+    font-size: 32rpx;
+    font-weight: bold;
+    margin-right: 20rpx;
+}
+
+.explain-text-price .explain-text-p .text-strikethrough{
+     text-decoration:line-through;
+}
+
+
+/* 轻松应对 */
+
+.easy-title{
+    font-size: 32rpx;
+     margin-bottom: 30rpx;
+}
+
+.easy-item{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.easy-item-baby{
+    width: 328rpx;
+    height: 198rpx;
+
+}
+.easy-item>text{
+    position: absolute;
+    top: 34rpx;
+    left: 40rpx;
+    color:#FFFFFFFF;
+}
+
+
+.easy-item-arrows{
+    width: 40rpx;
+    height: 40rpx;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 25rpx;
+    right: 28rpx;
+}
+
+
+.easy-item .weight-plate{
+     position: absolute;
+    top: 40%;
+    left: 35%;
+    color:#FFFFFFFF;
+}
+
+
+
+/* 名人讲堂 */
+ .lecture-top{
+     box-shadow:0px 12px 12px rgba(200,200,200,0.16);
+     border-bottom: none;
+     padding-bottom: 0;
+     margin-bottom: 20rpx;
+ }
+ .lecture-top .lecture{
+  width: 208rpx;
+  height: 234rpx;
+  margin-right: 30rpx;
+}
+
+.lecture-top .lecture image{
+    width: 208rpx;
+    height: 234rpx;
+   
+}
+.lecture-top .hotspot-explain-text{
+    margin-top: 20rpx;
+}
+
+
+.lecture-top  .lecture-list .explain-text-p{
+    height: 34rpx;
+    margin-top: 15rpx;
+}
+
+
+
+
+
+.lecture-top  .lecture-list .explain-text-p text{
+
+     color: #999999;
+    font-size: 24rpx;
+    font-weight: normal;
+     line-height: 1rpx; 
+     
+}
+
+
+
+.lecture-top  .lecture-list .explain-text-p .moneyStyle{
+    color: #DE595E;
+    font-size: 32rpx;
+}
+
+.lecture-top .lecture-expert{
+    color: #DBA015;
+    font-size: 24rpx;
+    padding: 10rpx;
+    margin-top: 8rpx;
+}
+
+
+

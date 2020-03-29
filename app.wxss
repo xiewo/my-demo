@@ -1,0 +1,79 @@
+@import  'common/icon.wxss';
+
+
+page{
+    width: 100%;
+    height: 100%;
+
+}
+
+
+/* 全局的page样式 */
+.page{
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  /* background-color: green; */
+}
+
+
+/* 页面根元素基本样式 */
+.page-root{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* 横向排列 */
+.flex-row{
+  display: flex;
+  align-items : cneter;
+}
+
+/* 横向排列上下居中两端对齐 */
+.flex-r-c{
+  display: flex;
+  align-items : cneter;
+  justify-content: space-between;
+}
+
+
+/* 纵向排列 */
+.flex-col{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+/* 纵向排列两端对齐 */
+.flex-c-b{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* 纵向排列居中对齐 */
+.flex-c-c{
+  display: flex;
+   align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* 占满剩余空间 */
+.flex-1{
+  flex: 1;
+}
+
+/* 全局content样式 */
+.content{
+  width: 100%;
+  height: 100%;
+  padding: 0 36rpx;
+  box-sizing: border-box;
+}
+
+
+
+

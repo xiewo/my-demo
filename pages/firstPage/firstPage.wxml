@@ -1,0 +1,42 @@
+<!--pages/firstPage/firstPage.wxml-->
+<!--  这是练习的页面 -->
+<!-- 想当于把内容全部复制过了 -->
+<include src='../../templates/header' />
+
+
+<button type="default"  hover-class="other-button-hover"> default </button>
+  <button type="primary" bindtap='btnClick' > {{show?'关闭':'显示'}} </button>
+
+<text>{{text}}</text>
+
+<view wx:if='{{show}}'>{{textTop}} 1 </view>
+<!-- <view wx:else='{{show}}'>{{textTop}} 2</view> -->
+
+<view wx:for="{{news}}" wx:key='item'>
+  {{index}} : {{item}}
+</view>
+
+
+
+<!-- 用import方式导入 -->
+<import src='../../templates/footer' />
+<!-- 用is属性的方式来指定 显示哪个定义好的属性 -->
+<template is='footer2' data='{{text:"frist里面的内容"}}'></template>
+
+
+
+<view class='view1' bindtap='view1Click' id='view1' data-title='新闻标题' data-id=' wo shi id'>
+     我是view1
+   <view class='view2' bindtap='view2Click'>
+          wo shi view2
+      <view class='view3'  bindtap='view3Click' id='view3'> 
+         <!-- catchtap 事件不会冒泡 -->
+         <!-- target 是发生事件的组件 -->
+         <!-- dataset 是当前组件 -->
+      我是view3</view>
+   </view>
+</view>
+
+
+
+<view>{{uname}}</view>

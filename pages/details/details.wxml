@@ -1,0 +1,36 @@
+<view class='course page' >
+     <view class='course-head' >
+         <image src='../../static/img/bofangtu1.png'></image>
+         <image src='../../static/img/bofangtu2.png'></image>
+         <view class=' course-title '>
+             <text class='iconfont icon-zuojiantou ' ></text>
+             <text>课程标题课程标题课程标程标题课程标...</text>
+         </view>
+         <view class='lock-btn ' >
+            <text>前往观看</text>
+         </view>
+     </view>
+
+
+     <view class='deadline'>
+       <view class ='deadline-list'>
+            <view class='flex-r-c'>
+                <view class='flex-r-c deadline-money'>
+                    <text>¥99.00</text>
+                    <text>限时优惠</text>
+                    <text>视频课程</text>
+                </view>
+                <view  class='iconfont {{isCollect?"icon-wujiaoxing collect":"icon-wujiaoxingkong  notCollect"}}'  bindtap='collectBtn' ></view>
+     
+            </view>
+            
+            <view>原价¥265.00</view>
+        </view>
+
+
+        <view>公司出品公司出品</view>
+     </view>
+
+     
+     
+</view>

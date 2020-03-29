@@ -1,0 +1,92 @@
+/* pages/firstPage/firstPage.wxss */
+
+
+
+/*横向布局*/
+.p-flex-row{/*横向排序 左端对齐 上下居中*/
+display:flex;
+align-items:center;
+}
+
+.p-flex-row-sb{/*横向排序 两端对齐 上下居中*/
+display:flex;
+align-items:center;
+justify-content:space-between;
+}
+
+.p-flex-row-sa{/*横向排序 两端对齐有边距 上下居中*/
+display:flex;
+align-items:center;
+justify-content:space-around;
+}
+
+
+/*纵向布局*/
+.p-flex-col-sb{/*纵向排列 两端对齐*/
+display:flex;
+flex-direction:column;
+justify-content:space-between;
+}
+
+.p-flex-col-sb-c{/*纵向排列 两端对齐 左右居中*/
+display:flex;
+flex-direction:column;
+justify-content:space-between;
+align-items:center;
+}
+
+.p-flex-col-sa{/*纵向排列 两端对齐有边距*/
+display:flex;
+flex-direction:column;
+justify-content:space-around;
+}
+
+.p-flex-col-sa-c{/*纵向排列 两端对齐有边距 左右居中*/
+display:flex;
+flex-direction:column;
+justify-content:space-around;
+align-items:center;
+}
+
+.p-flex-col-c-c{/*纵向排列 居中对齐 左右居中*/
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+}
+
+.p-flex-1{/*占满剩余空间*/
+flex:1;
+}
+
+
+/*浮动布局*/
+.p-ft-parent:after{/*加在浮动元素的父元素上 解决子元素浮动父元素高度问题*/
+content:'';
+display:block;
+clear:both;
+}
+
+.p-ft-l{/*左浮动*/
+float:left;
+}
+
+.p-ft-r{/*右浮动*/
+float:right;
+}
+
+.view1{
+  width: 100%;
+  height: 500rpx;
+  background-color: aqua;
+}
+.view2{
+  width: 80%;
+  height: 400rpx;
+  background-color: red;
+}
+.view3{
+  width: 60%;
+  height: 300rpx;
+  background-color: green;
+}

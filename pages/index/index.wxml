@@ -1,0 +1,184 @@
+<!--index.wxml-->
+<view class='page-root'>
+    <view class='flex-row top-tab'>
+        <view class='top-tab-item {{item.id==sel?"top-tab-sel":""}}' wx:for="{{list}}" wx:key="id" bindtap="change" data-s="{{item.id}}">
+            <text class=''>{{item.name}}</text>
+        </view>
+    </view>
+
+    <scroll-view>
+        <view class='content'>
+            <view class='flex-row page-content-title'>
+                <text class='recommend-title'></text>
+                <text>为您推荐</text>
+            </view>
+
+            <view class='flex-row  recommend-imgs '>
+                <view class='flex-1 recommend-lt'>
+                    <image src='../../static/img/shouye.png'></image>
+                    <view class='flex-col course-title '>
+                        <text>瑜伽精品培训课</text>
+                        <text class='watch-num'>观看2564次</text>
+                    </view>
+                    <text class='label-title'>精品课程</text>
+                </view>
+
+
+                <view class='flex-1 recommend-rt'>
+                    <view class='recommend-rt-item'>
+                        <image src='../../static/img/yizima.png'></image>
+                        <view class='flex-col course-title '>
+                            <text>瑜伽精品培训课</text>
+                            <text class='watch-num'>观看2564次</text>
+                        </view>
+                        <text class='label-title'>精品课程</text>
+                    </view>
+
+
+                    <view class='recommend-rt-item'>
+                        <image src='../../static/img/yizima.png'></image>
+                        <view class='flex-col course-title '>
+                            <text>瑜伽精品培训课</text>
+                            <text class='watch-num'>观看2564次</text>
+                        </view>
+                        <text class='label-title'>精品课程</text>
+                    </view>
+                </view>
+
+            </view>
+
+            <!-- 优惠专区 -->
+            <view class='discounts'>
+                <view class='flex-row page-content-title'>
+                    <text class='recommend-title'></text>
+                    <text>优惠专区</text>
+                </view>
+
+                <view class='flex-r-c '>
+                    <view wx:for="{{discounts}}"  wx:key='id'>
+                        <view>
+                            <view class='img-box'>
+                                <image src='../../static/img/zhanli.png'></image>
+                                <text class='schedule'>-40%</text>
+                            </view>
+                            <view class='flex-r-c'>
+                                <text>课程名称课程名称...</text>
+                                <text class='price'>¥99</text>
+                            </view>
+                        </view>
+                    </view>
+
+                </view>
+            </view>
+
+            <!-- 热门好课 -->
+            <view class=' hotspot'>
+                <view class='flex-row page-content-title'>
+                    <text class='recommend-title'></text>
+                    <text>热门好课</text>
+                </view>
+
+
+                <view wx:for="{{hotspot}}" wx:key='id'>
+                    <view class='flex-r-c hotspot-item'>
+                        <view class='hotspot-item-img'>
+                            <!-- 这里是左边图片 -->
+                            <image src='../../static/img/wuzi.png'></image>
+                            <text>学习次数111</text>
+                        </view>
+                        <view class='hotspot-item-explain flex-c-b'>
+                            <!-- 这里是右边的说明 -->
+                            <view class='hotspot-explain-text '>
+                                课程名称课程名称课程名称课程名称课程名称课程名称课程名...
+                            </view>
+                            <view class='flex-r-c explain-text-price'>
+                                <view>乌拉老师</view>
+                                <view class='explain-text-p'>
+                                    <text>¥99</text>
+                                    <text class='text-strikethrough'>¥356</text>
+                                </view>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+
+            <!-- 轻松应对抑郁难题 -->
+
+            <view class='easy-title'>
+                   <view class='flex-row page-content-title'>
+                        <text class='recommend-title'></text>
+                        <text>轻松应对抑郁难题</text>
+                    </view>
+                    <view class='flex-r-c'>
+                        <view class='easy-item' >
+                            <image src='../../static/img/baby.png' class='easy-item-baby'></image>
+                                <text>产前抑郁</text>
+                                <image src='../../static/img/jiantou.jpg'
+                                class='easy-item-arrows' ></image>
+                        </view>
+                         <view class='easy-item' >
+                            <image src='../../static/img/baby.png' class='easy-item-baby'></image>
+                                <text>产前抑郁</text>
+                                <image src='../../static/img/jiantou.jpg'
+                                class='easy-item-arrows' ></image>
+                        </view>
+                    </view>
+            </view>
+
+
+            <view>
+                <view class='flex-row page-content-title'>
+                        <text class='recommend-title'></text>
+                        <text>产后体重控制？</text>
+                </view>
+
+                <view class='flex-r-c'>
+                        <view class='easy-item' >
+                            <image src='../../static/img/baby.png' class='easy-item-baby'></image>
+                            <text class='weight-plate'>板块一</text>
+                        </view>
+                         <view class='easy-item' >
+                            <image src='../../static/img/baby.png' class='easy-item-baby'></image>
+                            <text class='weight-plate'>板块二</text>
+                        </view>
+                    </view>
+            </view>
+            
+
+            <view class=' hotspot'>
+                <view class='flex-row page-content-title'>
+                    <text class='recommend-title'></text>
+                    <text>名人讲堂</text>
+                </view>
+
+
+                <view wx:for="{{lecture}}" wx:key='id'>
+                    <view class='flex-r-c hotspot-item lecture-top '>
+                        <view class='hotspot-item-img lecture'>
+                            <!-- 这里是左边图片 -->
+                            <image src='../../static/img/zhanli.png' ></image>
+                        </view>
+                        
+                        <view class='hotspot-item-explain flex-c-b lecture-list  '>
+                            <!-- 这里是右边的说明 -->
+                            <view class='hotspot-explain-text '>
+                                  课程名称课程名称课程名称课程名称课程名称课程名称课程名......
+                            </view>
+                             <!-- <text>高端私人健身专家</text> -->
+                            <view class='lecture-expert' >高端私人健身专家</view>
+                            <view class=' explain-text-price '>
+                                <view class='explain-text-p flex-r-c'>
+                                    <text>19万次学习 | 23课时</text>
+                                    <text class='moneyStyle'>¥99</text>    
+                                </view>    
+                            </view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+
+        </view>
+    </scroll-view>
+
+</view>
