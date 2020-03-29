@@ -6,7 +6,8 @@ Page({
      */
     data: {
         isCollect:false,
-
+        sel:1,
+       
     },
 
 
@@ -72,6 +73,13 @@ collectBtn(){
    this.setData({ 
      isCollect: !this.data.isCollect
    })
+},
+
+setChange(e){
+    // console.log(e)
+    this.setData({
+      sel:e.currentTarget.dataset.sel
+    })
 }
 
 })

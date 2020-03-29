@@ -97,6 +97,10 @@
    box-sizing:border-box;
 }
 
+.tema-info-box>view:first-child{
+    border-bottom: 2rpx solid #ddd;
+    
+}
 .tema-info-box>view:first-child .price{
    font-size:44rpx;
    color:#DE595E;
@@ -124,4 +128,111 @@
    color:#ea9518;
 }
 
+.tema-info-box .original{
+   font-size: 20rpx;
+ 
+   margin: 24rpx 0 14rpx 10rpx;
+   color: #999999;
+}
+.tema-info-box .original .original-price{
+    text-decoration:line-through;
+    margin-right: 15rpx;
+}
 
+.tema-info-box .original .original-data{
+    margin-left: 2rpx;
+}
+
+
+.tema-info-box .firm{
+    margin-top: 30rpx;
+    font-size: 28rpx;
+    color: #666666;
+    border-bottom: 2rpx solid #ddd;
+    padding-bottom: 30rpx;
+}
+.tema-info-box .firm image{
+    width: 63rpx;
+    height: 62rpx;
+    margin-right: 20rpx;
+}
+
+
+
+/* 标题 tab*/
+.message-catalogue{
+ padding: 0 32rpx;
+}
+
+.message-catalogue .message-title{
+    font-size: 32rpx;
+    color: #999999;
+   
+}
+ .message-title .message-title-list:first-child{
+     margin-right: 58rpx;
+ }
+.message-title .message-title-list text:last-child{
+    width: 48rpx;
+    border-bottom: 4rpx solid #fff;
+    margin-top: 20rpx;
+}
+
+ .message-title  .message-selact {
+      color: #49B4B1;
+}
+ .message-title   .message-selact text:last-child{
+      border-bottom: 4rpx solid #49b4b1;
+ }
+
+
+
+    
+    
+
+
+/*  这是课程名称及说明 */
+.course-title{
+     padding: 32rpx;
+}
+
+.course-title .course-title-item{
+        font-size: 32rpx;
+        font-weight: bold;
+    }
+
+ 
+  .course-title .course-title-item .linellae{
+      width: 10rpx;
+       height: 32rpx;
+      margin-right: 30rpx;
+      background-color: #999999;
+  }
+
+  .course-title .course-word{
+      margin-left: 5rpx;
+      color: #666666;
+  }
+
+  .synopsis{
+      margin-top: 40rpx;
+  }
+
+ .synopsis .synopsis-word {
+     display: block;
+     color: #666666;
+     text-indent: 2rem;
+     text-align: left;
+     margin-top: 32rpx;
+     /* padding: 2rpx; */
+ }
+
+ .footer-photo{
+     margin-top: 42rpx;
+     
+ }
+
+ .footer-photo image{
+     width: 100%;
+     height: 1040rpx;
+ }

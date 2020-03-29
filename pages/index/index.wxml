@@ -1,4 +1,6 @@
 <!--index.wxml-->
+
+<!-- 这里是是头部导航栏 -->
 <view class='page-root'>
     <view class='flex-row top-tab'>
         <view class='top-tab-item {{item.id==sel?"top-tab-sel":""}}' wx:for="{{list}}" wx:key="id" bindtap="change" data-s="{{item.id}}">
@@ -6,8 +8,10 @@
         </view>
     </view>
 
+
     <scroll-view>
         <view class='content'>
+         <!-- 为您推荐 -->
             <view class='flex-row page-content-title'>
                 <text class='recommend-title'></text>
                 <text>为您推荐</text>
