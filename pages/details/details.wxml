@@ -1,18 +1,18 @@
-<view class='course page' >
-     <view class='course-head' >
-         <image src='../../static/img/bofangtu1.png'></image>
-         <image src='../../static/img/bofangtu2.png'></image>
-         <view class=' course-title '>
-             <text class='iconfont icon-zuojiantou ' ></text>
-             <text>课程标题课程标题课程标程标题课程标...</text>
-         </view>
-         <view class='lock-btn ' >
-            <text>前往观看</text>
-         </view>
-     </view>
+<view class='course page'>
+   <view class='course-head'>
+      <image src='../../static/img/bofangtu1.png'></image>
+      <image src='../../static/img/bofangtu2.png'></image>
+      <view class=' course-title '>
+         <text class='iconfont icon-zuojiantou '></text>
+         <text>课程标题课程标题课程标程标题课程标...</text>
+      </view>
+      <view class='lock-btn '>
+         <text>前往观看</text>
+      </view>
+   </view>
 
 
-     <view class='deadline'>
+   <!-- <view class='deadline'>
        <view class ='deadline-list'>
             <view class='flex-r-c'>
                 <view class='flex-r-c deadline-money'>
@@ -29,8 +29,32 @@
 
 
         <view>公司出品公司出品</view>
-     </view>
+     </view> -->
 
-     
-     
+
+
+   <!--课程所属公司信息-->
+   <view class='tema-info-box'>
+      <view>
+         <view class='p-fx-row-sb-c'>
+            <view class='p-fx-row-d-c'>
+               <text class='price'>￥99.00</text>
+               <text class='label'>限时优惠</text>
+               <text class='label'>视频课程</text>
+            </view>
+            <text class='iconfont {{isCollect?"icon-wujiaoxing":"icon-wujiaoxingkong"}}' bindtap='collectBtn'></text>
+         </view>
+         <view>
+            <text>原价￥253.00</text>|
+            <text>有效期：360天</text>
+         </view>
+      </view>
+
+      <view>
+
+      </view>
+   </view>
+
+
+
 </view>

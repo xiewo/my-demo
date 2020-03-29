@@ -42,17 +42,14 @@
 }
 
 
-.deadline{
+
+
+/*.deadline{
   margin-top: 30rpx;
  
 }
 .deadline .icon-wujiaoxing,.deadline .icon-wujiaoxingkong{
     line-height: 54rpx;
-
-    /* text-align:center;
-    line-height:50rpx;
-    width:50rpx;
-    height:50rx; */
 }
 
 .deadline .deadline-money {
@@ -72,7 +69,6 @@
    border: 2rpx solid #FF9AAB;
    color: #FF9AAB;
    padding: 3rpx;
-   /* margin-top: 15rpx; */
 }
 
 .deadline .deadline-money text:last-child{
@@ -80,7 +76,6 @@
       border: 2rpx solid green;
       height: 26rpx;
       padding: 3rpx;
-     /* margin-top: 15rpx; */
       border-radius: 5rpx;
 }
 
@@ -90,4 +85,43 @@
 
 .deadline .notCollect{
    color:#ACA9AC;
+}*/
+
+
+
+
+
+/*课程所属公司信息*/
+.tema-info-box{
+   padding:32rpx 36rpx 40rpx;
+   box-sizing:border-box;
 }
+
+.tema-info-box>view:first-child .price{
+   font-size:44rpx;
+   color:#DE595E;
+   margin-right:42rpx;
+}
+
+.tema-info-box>view:first-child .label{
+   font-size:20rpx;
+   border:1rpx solid #FF9AAB;
+   color:#FF9AAB;
+   border-radius:5rpx;
+   padding:8rpx;
+}
+
+.tema-info-box>view:first-child .label:last-child{
+   border-color:#87B3FF;
+   color:#87B3FF;
+   margin-left:10rpx;
+}
+
+.tema-info-box>view:first-child .icon-wujiaoxingkong{
+   color:#ACA9AC;
+}
+.tema-info-box>view:first-child .icon-wujiaoxing{
+   color:#ea9518;
+}
+
+
