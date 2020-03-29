@@ -55,8 +55,8 @@
     height:50rx; */
 }
 
-.deadline .deadline-money text{
-    /* line-height: 54rpx; */
+.deadline .deadline-money {
+    line-height: 54rpx;
     font-size: 18rpx;
 }
 .deadline .deadline-money text:first-child{
@@ -66,21 +66,22 @@
 }
 
 .deadline .deadline-money text:nth-child(2){
-   margin: 10rpx 0 0 40rpx;
-   text-align: center;
-   height: 32rpx;
-   padding: 3rpx;
+  margin-left: 40rpx;
+   height: 26rpx;
    border-radius: 5rpx;
    border: 2rpx solid #FF9AAB;
    color: #FF9AAB;
- 
+   padding: 3rpx;
+   /* margin-top: 15rpx; */
 }
 
 .deadline .deadline-money text:last-child{
-    margin: 20rpx 0 0 40rpx;
-    margin-left: 20rpx;
-      height: 32rpx;
+     margin-left: 20rpx;
+      border: 2rpx solid green;
+      height: 26rpx;
       padding: 3rpx;
+     /* margin-top: 15rpx; */
+      border-radius: 5rpx;
 }
 
 .deadline  .collect{
