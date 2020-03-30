@@ -40,3 +40,32 @@
 
 
 <view>{{uname}}</view>
+
+
+<view>我获得上一个页面的： {{id}}</view>
+
+<view>第二个值是用&连接发过来： {{til}}</view>
+
+
+
+<view>
+            <button type='default' hover-class="other-button-hover" >defoult</button>
+
+            <button type='primary' bindtap='btnClick1'>{{btnText}}</button>
+            <text wx:if='{{show}}'>{{text}}1</text>
+            <text wx:else='{{show}}'>{{text}}2</text>
+            <button type="default" hover-class="other-button-hover"> default </button>
+            <button type="primary"> primary </button>
+
+  <view wx:for='{{news}}' wx:key='index' >
+     {{index}} - {{item}}
+    </view>
+    </view>
+    <include src='../../templates/header.wxml' />
+    <import src='../../templates/footer.wxml' />
+    <template is='footer2' data="{{text:'在template中赋值'}}"></template>
+
+    <view bindtap='btnChange'>我可以带参数跳转</view>
+    <navigator url='../firstPage/firstPage?id={{id}}&title={{titel}}'>
+        <view>跳转</view>
+    </navigator>

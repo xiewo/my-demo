@@ -1,31 +1,36 @@
 {
-  "pages": [
-      "pages/details/details",
-    "pages/index/index",
-    "pages/logs/logs",
-    "pages/firstPage/firstPage"
-  ],
-  "window": {
-    "backgroundTextStyle": "dark",
-    "navigationBarBackgroundColor": "#ddd",
-    "navigationBarTitleText": "这是首页显示",
-    "navigationBarTextStyle": "black"
-  },
-
-  "tabBar":{
-      "color":"#000",
-      "borderStyle":"white",
-      "backgroundColor":"#ddd",
-      "list":[{
-            "pagePath": "pages/index/index",
-            "text": "首页"
-        },
-        {
-            "pagePath": "pages/logs/logs",
-            "text": "日志"
-        }]
-  },
-  "style": "v2",
-  "sitemapLocation": "sitemap.json",
-  "debug":true
+    "pages": [
+        
+        "pages/myHome/myHome",
+        "pages/details/details",
+        "pages/index/index",
+        "pages/logs/logs",
+        "pages/firstPage/firstPage",
+        "secondary/HomeSubset/history/history"
+     
+    ],
+    "window": {
+        "backgroundTextStyle": "dark",
+        "navigationBarBackgroundColor": "#ddd",
+        "navigationBarTitleText": "这是首页显示",
+        "navigationBarTextStyle": "black"
+    },
+    "tabBar": {
+        "color": "#000",
+        "borderStyle": "white",
+        "backgroundColor": "#ddd",
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "text": "首页"
+            },
+            {
+                "pagePath": "pages/logs/logs",
+                "text": "日志"
+            }
+        ]
+    },
+    "style": "v2",
+    "sitemapLocation": "sitemap.json",
+    "debug": true
 }

@@ -12,16 +12,22 @@ Page({
     textTop: '我要显示一个新的内容',
     show:true,
     news: ['aaaa', 'bbbb', 'cccd'],
-    uname:'hello world'
+    uname:'hello world',
+    til:null,
+      id: 4,
+      titel: '美国疫情',
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-     console.log(getApp())
+      console.log(options)
+    //  console.log(getApp())
        this.setData({
-           uname: app.myData.userName
+           uname: app.myData.userName,
+           id: options.id,
+           til: options.title
            })
   },
 
@@ -97,4 +103,20 @@ Page({
     console.log('我是view3')
     console.log( evel)
   },
+    btnClick1() {
+        let newsdata = this.data.news;
+        newsdata.pop();
+        this.setData({
+            text: '我btn后改变的',
+            show: !this.data.show,
+            news: newsdata,
+        })
+    },
+
+    btnChange() {
+        console.log(1111)
+        wx.navigateTo({
+            url: '../firstPage/firstPage?' + `id={{this.id}}` + `&title=我是好人`
+        })
+    }
 })

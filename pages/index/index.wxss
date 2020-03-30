@@ -296,3 +296,15 @@
 
 
 
+.fixed{
+    position: fixed;
+    bottom: 4rpx;
+    right: 22rpx;
+}
+
+
+.fixed image{
+   width: 136rpx;
+   height: 136rpx;
+
+}

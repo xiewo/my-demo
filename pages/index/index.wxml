@@ -181,7 +181,9 @@
                     </view>
                 </view>
             </view>
-
+        <view class='fixed' bindtap='btnToMyHome'>
+           <image src='../../static/img/myhome.png'></image>
+        </view>
         </view>
     </scroll-view>
 

@@ -60,5 +60,11 @@ Page({
         this.setData({
             sel: e.currentTarget.dataset.s
         })
-    }
+    },
+
+    btnToMyHome(){
+     wx.navigateTo({
+         url:'/pages/myHome/myHome'
+     })
+    },
 })

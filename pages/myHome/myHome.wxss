@@ -1,0 +1,47 @@
+
+/* 个人中心 */
+.page{
+      background-color: #E8E8E8;
+}
+.home{
+    padding: 36rpx;
+    
+}
+.home .home-photo{
+    padding: 48rpx;
+    font-size: 36rpx;
+    font-weight: bold;
+    background-color: #fff;
+}
+
+.home .home-photo image{
+    width: 120rpx;
+    height: 120rpx;
+    margin-right: 44rpx;
+    
+}
+
+.navigation{
+    margin-top: 32rpx;
+    padding: 28rpx;
+    background-color: #fff;
+}
+.navigation .my-home-i{
+    border-bottom: 2rpx solid #E8E8E8;
+    padding-bottom: 20rpx ;
+}
+
+.navigation .my-home-s{
+    flex-wrap: wrap;
+    
+}
+.navigation .my-home-s .my-home-imgs{
+    width: 25%;
+    margin-top: 52rpx;
+    font-size: 28rpx;
+}
+.navigation .my-home-s .my-home-imgs image{
+    width: 60rpx;
+    height: 60rpx;
+    margin-bottom: 24rpx;   
+}

@@ -12,27 +12,6 @@
    </view>
 
 
-   <!-- <view class='deadline'>
-       <view class ='deadline-list'>
-            <view class='flex-r-c'>
-                <view class='flex-r-c deadline-money'>
-                    <text>¥99.00</text>
-                    <text>限时优惠</text>
-                    <text>视频课程</text>
-                </view>
-                <view  class='iconfont {{isCollect?"icon-wujiaoxing collect":"icon-wujiaoxingkong  notCollect"}}'  bindtap='collectBtn' ></view>
-     
-            </view>
-            
-            <view>原价¥265.00</view>
-        </view>
-
-
-        <view>公司出品公司出品</view>
-     </view> -->
-
-
-
    <!--课程所属公司信息-->
    <view class='tema-info-box'>
       <view>

@@ -1,0 +1,55 @@
+/* 观看历史 */
+
+.history{
+  padding: 36rpx;
+}
+.history .history-item{
+    margin-bottom: 40rpx;
+}
+.history-item .history-item-title{
+    font-size: 32rpx;
+    font-weight: bold;
+}
+.history-item .history-item-paly{
+    margin-top: 40rpx;
+}
+
+.history-item-paly .paly-image image{
+    width: 240rpx;
+    height: 136rpx;
+
+}
+
+.history-item-paly .paly-image{
+    position: relative;
+    font-size: 20rpx;
+    color: #fff;
+    margin-left: 28rpx;
+}
+
+.history-item-paly .paly-image text{
+    width: 106rpx;
+    height: 38rpx;
+    line-height: 38rpx;
+    text-align: center;
+    position: absolute;
+    top: 16rpx;
+    left: 12rpx;
+    padding: 4rpx;
+    border-radius: 8rpx;
+    background-color: #b2b2b2;
+}
+
+.history-item-paly .paly-title{
+    font-size: 28rpx;
+    margin-left: 28rpx;
+    font-weight: bold;
+}
+
+
+.history-item-paly .paly-title text:last-child{
+        font-size: 24rpx;
+        color: #666666;
+        margin-top: 12rpx;
+        font-weight: normal;
+}

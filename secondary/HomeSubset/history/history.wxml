@@ -1,0 +1,37 @@
+<view class='page'>
+
+   <view class='history'>
+      <view class=' history-item'>
+          <view class='history-item-title'>今天</view>
+           <view class='p-fx-row-d-c history-item-paly' wx:for='{{todays}}' wx:key='index' >
+               <view class='paly-image'>
+                    <image src='{{item.pathUrl}}'></image>
+                    <text>{{item.palys}}</text>
+               </view>
+              
+               <view class='p-fx-col-sb paly-title'>
+                   <text>{{item.title}}</text>
+                   <text>已收听{{item.DataTime}}%</text>
+               </view>
+           </view>
+      
+      </view>
+
+       <view class=' history-item'>
+          <view class='history-item-title'>更早</view>
+           <view class='p-fx-row-d-c history-item-paly' wx:for='{{yesterdays}}' wx:key='index' >
+               <view class='paly-image'>
+                    <image src='{{item.pathUrl}}'></image>
+                    <text>{{item.palys}}</text>
+               </view>
+              
+               <view class='p-fx-col-sb paly-title'>
+                   <text>{{item.title}}</text>
+                   <text>已收听{{item.DataTime}}%</text>
+               </view>
+           </view>
+      
+      </view>
+   </view>
+
+</view>

@@ -43,54 +43,6 @@
 
 
 
-
-/*.deadline{
-  margin-top: 30rpx;
- 
-}
-.deadline .icon-wujiaoxing,.deadline .icon-wujiaoxingkong{
-    line-height: 54rpx;
-}
-
-.deadline .deadline-money {
-    line-height: 54rpx;
-    font-size: 18rpx;
-}
-.deadline .deadline-money text:first-child{
-      color: #DE595E;
-      font-size: 44rpx;
-      font-weight: bold;
-}
-
-.deadline .deadline-money text:nth-child(2){
-  margin-left: 40rpx;
-   height: 26rpx;
-   border-radius: 5rpx;
-   border: 2rpx solid #FF9AAB;
-   color: #FF9AAB;
-   padding: 3rpx;
-}
-
-.deadline .deadline-money text:last-child{
-     margin-left: 20rpx;
-      border: 2rpx solid green;
-      height: 26rpx;
-      padding: 3rpx;
-      border-radius: 5rpx;
-}
-
-.deadline  .collect{
-   color: #ea9518;
-}
-
-.deadline .notCollect{
-   color:#ACA9AC;
-}*/
-
-
-
-
-
 /*课程所属公司信息*/
 .tema-info-box{
    padding:32rpx 36rpx 40rpx;

@@ -1,8 +1,8 @@
 <template name='footer1'>
-   这里是底部1
+   这里是底部1{{text}}
 </template>
 
 
 <template name='footer2'>
-   {{text}}
+   {{text}}2
 </template>
