@@ -1,123 +1,114 @@
 <view class='course page'>
-   <view class='course-head'>
-      <image src='../../static/img/bofangtu1.png'></image>
-      <image src='../../static/img/bofangtu2.png'></image>
-      <view class=' course-title '>
-         <text class='iconfont icon-zuojiantou '></text>
-         <text>课程标题课程标题课程标程标题课程标...</text>
-      </view>
-      <view class='lock-btn '>
-         <text>前往观看</text>
-      </view>
-   </view>
+    <view class='course-head'>
+        <image src='../../static/img/bofangtu1.png'></image>
+        <image src='../../static/img/bofangtu2.png'></image>
+        <view class=' course-title '>
+            <text class='iconfont icon-zuojiantou '></text>
+            <text>课程标题课程标题课程标程标题课程标...</text>
+        </view>
+        <view class='lock-btn '>
+            <text>前往观看</text>
+        </view>
+    </view>
 
 
-   <!--课程所属公司信息-->
-   <view class='tema-info-box'>
-      <view>
-         <view class='p-fx-row-sb-c'>
+    <!--课程所属公司信息-->
+    <view class='tema-info-box'>
+        <view>
+            <view class='p-fx-row-sb-c'>
 
-            <view class='p-fx-row-d-c'>
-               <text class='price'>￥99.00</text>
-               <text class='label'>限时优惠</text>
-               <text class='label'>视频课程</text>
+                <view class='p-fx-row-d-c'>
+                    <text class='price'>￥99.00</text>
+                    <text class='label'>限时优惠</text>
+                    <text class='label'>视频课程</text>
+                </view>
+
+                <text class='iconfont {{isCollect?"icon-wujiaoxing":"icon-wujiaoxingkong"}}' bindtap='collectBtn'></text>
             </view>
 
-            <text class='iconfont {{isCollect?"icon-wujiaoxing":"icon-wujiaoxingkong"}}' bindtap='collectBtn'></text>
-         </view>
+            <view class='original '>
+                <text class='original-price'>原价￥253.00</text>|
+                <text class='original-data'>有效期：360天</text>
+            </view>
+        </view>
 
-         <view class='original '>
-            <text class='original-price'>原价￥253.00</text>|
-            <text class='original-data'>有效期：360天</text>
-         </view>
-      </view>
-
-      <view class='p-fx-row-d-c firm'>
-           <image src='../../static/img/xiaotubiao.png'></image>
-           <text>公司出品公司出品</text>
-      </view>
-   </view>
+        <view class='p-fx-row-d-c firm'>
+            <image src='../../static/img/xiaotubiao.png'></image>
+            <text>公司出品公司出品</text>
+        </view>
+    </view>
 
 
-<!--课程 信息 和 目录 -->
+    <!--课程 信息 和 目录 -->
     <view class='message-catalogue'>
         <!-- 最上面的俩个列表 -->
-         <view class='p-fx-row-c-c message-title'>
+        <view class='p-fx-row-c-c message-title'>
             <view class='p-fx-col-d-c  message-title-list {{sel==1?"message-selact":""}}' bindtap="setChange" data-sel='1'>
-               <text >课程信息</text>
-               <text ></text>
+                <text>课程信息</text>
+                <text></text>
             </view>
-            <view class='p-fx-col-d-c  message-title-list {{sel==2?"message-selact":""}} ' bindtap='setChange' data-sel="2" >
-              <text>课程目录</text>
-               <text></text>
+            <view class='p-fx-col-d-c  message-title-list {{sel==2?"message-selact":""}} ' bindtap='setChange' data-sel="2">
+                <text>课程目录</text>
+                <text></text>
             </view>
-         </view>
+        </view>
 
-         <!-- 课程名称  -->
-       
-         <view class='course-title' wx:if="{{sel==1}}" >
-             <view>
-           
-               <view class='p-fx-row-d-c course-title-item'>
+        <!-- 课程名称  -->
+
+        <view class='course-title' wx:if="{{sel==1}}">
+            <view>
+
+                <view class='p-fx-row-d-c course-title-item'>
                     <text class=' linellae'></text>
                     <text>课程名称：</text>
-               </view>
+                </view>
                 <view class='course-word'>
                     <text>
                        课程名称实例课程名称实例课程名称实例课程名称实例课程名称实例课程名称实例课程                          </text>
                 </view>
-           
-             </view>
-            
-        
-        
-        <!-- 课程简介 -->
+
+            </view>
+            <!-- 课程简介 -->
             <view class='synopsis'>
                 <view class='p-fx-row-d-c course-title-item'>
-                        <text class=' linellae'></text>
-                        <text>课程简介：</text>
+                    <text class=' linellae'></text>
+                    <text>课程简介：</text>
                 </view>
                 <view class='synopsis-word'>
-                   
-                            课程简介课程简介课程简介课程简介课
-                        课程简介课程简介课程简介课程简介课程简
-                        课程简介课程简介课程简介课程简介课程简
-                        课程简介课程简介课程简介课程简介课程简
-                        课程简介课程简介课程简介课程简介课程简
-                        课程简介课程简介课程简介课程简介课程简
-                        课程简介课程简介课程简介课程简介课程简
-                        课程简介课程简介课程简介课程简介课程简
-                        课程简介课程简介课程简介课程简介课程简
-                  
+                    课程简介课程简介课程简介课程简介课 课程简介课程简介课程简介课程简介课程简 课程简介课程简介课程简介课程简介课程简 课程简介课程简介课程简介课程简介课程简 课程简介课程简介课程简介课程简介课程简 课程简介课程简介课程简介课程简介课程简 课程简介课程简介课程简介课程简介课程简 课程简介课程简介课程简介课程简介课程简 课程简介课程简介课程简介课程简介课程简
+
                 </view>
-             </view>
+            </view>
 
             <!-- 底部图片 -->
             <view class='footer-photo'>
                 <image src='../../static/img/ditu.png'></image>
             </view>
-        </view>  
+        </view>
+
+
+
+
         <view wx:else>
             <view class='catalogue'>
-            
-                 <view class='p-fx-row-d-c course-title-item'>
+
+                <view class='p-fx-row-d-c course-title-item'>
                     <text class=' linellae'></text>
                     <text>课程目录：</text>
-               </view>
-                <view  class='p-fx-row-sb catalogue-play' wx:for='{{lockPlay}}' wx:key='id'>
+                </view>
+                <view class='p-fx-row-sb catalogue-play' wx:for='{{lockPlay}}' wx:key='id'>
                     <view>
-                       {{item.id}}.课程课程课程课程课程课程课程...
+                        {{item.id}}.课程课程课程课程课程课程课程...
                     </view>
                     <view class='p-fx-row-sa-c iconfont {{isBuy?"icon-bofang2 try1":item.isSee?"icon-bofang  try2":"icon-suo"}}'>
                         <text wx:if='{{item.isSee && !isBuy}}'>试看</text>
                     </view>
                 </view>
-            
+
             </view>
-               
-        
-        
-        </view> 
+        </view>
+
+
     </view>
 
 </view>

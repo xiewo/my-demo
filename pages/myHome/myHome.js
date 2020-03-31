@@ -14,8 +14,15 @@ Page({
               title:'观看历史',
                  pathUrl: "/secondary/HomeSubset/history/history",
              },
-             { id: 2, url: '../../static/img/icon_wodeshoucang.png', title: '我的收藏' },
-             { id: 3, url: '../../static/img/icon_futongzhi.png', title: '服务通知' },
+             { id: 2,
+              url: '../../static/img/icon_wodeshoucang.png',
+               title: '我的收藏' ,
+                pathUrl: "/secondary/HomeSubset/collect /collect "
+             
+             },
+             { id: 3, 
+             url: '../../static/img/icon_futongzhi.png', 
+             title: '服务通知' },
              { id: 4, url: '../../static/img/icon_yigoumai.png', title: '已购买' },
              { id: 5, url: '../../static/img/icon_kefuzhongxin.png', title: '客服中心' },
              { id: 6, url: '../../static/img/icon_tuiguang.png', title: '推广' },
