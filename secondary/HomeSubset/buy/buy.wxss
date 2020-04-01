@@ -1,0 +1,139 @@
+
+/* 主体样式 背景有渐变 */
+.buy{
+    height: 100%;
+    background:linear-gradient(180deg,rgba(255,255,255,1) 0%,rgba(232,232,232,1) 100%);
+}
+/* 导航栏 */
+.buy .buy-nav{
+    margin-top: 20rpx;
+}
+ .buy-nav  .scroll-w{
+  white-space: nowrap;
+  width: 100%;
+}
+
+.scroll-w .scroll-item{
+  width: 64rpx;
+  margin-left: 52rpx;
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #999999;
+}
+
+.scroll-w .scroll-item .scroll-item-c{
+    width: 48rpx;
+    height: 4rpx;
+    border-bottom: 4rpx solid #fff;
+}
+.scroll-w .scroll-item:first-child {
+    margin-left: 32rpx; 
+}
+
+
+.scroll-opt .scroll-item-title{
+    color: #49B4B1;
+}
+
+.scroll-w .scroll-opt .scroll-item-c{
+    border-bottom: 4rpx solid #49B4B1;
+}
+
+
+
+/* 已购买内容的样式 */
+.buy-item .buy-list{
+    padding: 0 28rpx 18rpx;
+    margin: 32rpx;
+    border-radius: 8rpx;
+    background-color: #fff;
+
+}
+
+/* 订单编号 */
+.buy-list .list-top{
+     border-bottom: 2rpx solid #ddd;
+     color: #333333;
+     font-size: 28rpx;
+    padding-bottom: 20rpx;
+}
+
+.buy-list .list-top text:last-child{
+    font-size: 24rxp;
+    color: #FF4545;
+    
+}
+
+
+/* 图片区域 */
+.buy-list .list-title-text{
+     margin-top: 20rpx;
+     border-bottom: 2rpx solid #ddd;
+     padding-bottom: 28rpx;
+}
+
+
+.list-title-text .list-image image{
+    width: 240rpx;
+    height: 136rpx;
+    border: 3rpx dashed #000;
+}
+
+
+
+
+.list-title-text .list-image-title{
+    margin-left: 28rpx;
+    color: #666666;
+    font-size: 28rpx;
+   
+}
+
+.list-title-text .list-image-title text{
+    padding-bottom: 10rpx;
+}
+
+.list-title-text .list-image-title text:first-child{
+    color: #333333;
+    font-weight: bold;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+
+.list-title-text .list-image-title text:last-child{
+    font-size: 24rpx;
+}
+
+/* 最下面的剩余时间 */
+.buy-list .list-title-time{
+    font-size: 24rpx;
+    color: #999999;
+    margin-top: 18rpx;
+}
+
+.buy-list .list-title-time text:last-child{
+    font-size: 28rpx;
+    width: 172rpx;
+    height: 52rpx;
+    border: 2rpx solid #ddd;
+    border-radius: 52rpx;
+    text-align: center;
+    line-height: 52rpx;
+}
+
+.buy .iskong{
+    margin-top: 132rpx;
+}
+
+.buy .iskong image{
+     width: 600rpx;
+     height: 600rpx;
+     border: 3rpx dashed #333333;
+     margin-bottom: 28rpx; 
+}
+
+

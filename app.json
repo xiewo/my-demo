@@ -1,12 +1,15 @@
 {
     "pages": [
-        "secondary/HomeSubset/collect /collect ",
         "pages/myHome/myHome",
         "pages/details/details",
         "pages/index/index",
         "pages/logs/logs",
         "pages/firstPage/firstPage",
-        "secondary/HomeSubset/history/history"
+        "secondary/HomeSubset/history/history",
+        "secondary/HomeSubset/serveice/serveice",
+        "secondary/HomeSubset/buy/buy",
+        "secondary/HomeSubset/collect /collect ",
+        "secondary/HomeSubset/centre/centre"
     ],
     "window": {
         "backgroundTextStyle": "dark",

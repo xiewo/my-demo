@@ -1,0 +1,142 @@
+/* 服务通知 */
+.page{
+    width: 100%;
+    height: 100%;
+}
+.serveice{
+   background: linear-gradient(180deg,rgba(255,255,255,1) 0%,rgba(232,232,232,1) 100%);
+   padding: 32rpx;
+   
+}
+
+
+
+
+/* 消失通知置顶 */
+.serve-pass{
+    font-size: 28rpx;
+    padding: 28rpx;
+    font-weight: bold;
+    background-color: #fff;
+    border-radius: 8rpx;
+}
+
+
+.serve-pass view.pass-top{
+    border-bottom: 2rpx solid #ddd;
+    padding-bottom : 20rpx;
+}
+
+
+.pass-image .image-view {
+    font-size: 24rpx;
+    margin-top: 20rpx;
+}
+
+
+
+.image-view image{
+    width: 240rpx;
+    height: 136rpx;
+    border: 3rpx dashed #333333;
+}
+
+.pass-image  .title-view{
+    margin-left: 28rpx;
+}
+
+
+.pass-image  .title-view text:frist-child{
+      overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+
+.pass-image  .title-view text:last-child{
+    margin-top: 20rpx;
+    font-size: 24rpx;
+    color: #666666;
+      overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+
+/* 这是中间显示的时间 */
+.serveice .serve-time{
+    padding: 46rpx 0;
+    font-size: 20rpx;
+    color: #fff;
+ 
+}
+
+.serveice .serve-time text{
+     background-color: #E8E8E8;
+     width: 106rpx;
+     height: 38rpx;
+     text-align: center;
+     line-height: 38rpx;
+     border-radius: 8rpx;
+}
+
+
+
+/*   可以学习   大部分样式同上*/
+
+.studys .studys-for{
+    margin-top: 20rpx;
+}
+.studys .serve-pass .pass-top text:last-child{
+     width: 152rpx;
+     height: 52rpx;
+     border-radius: 52rpx;
+     background-color: #49B4B1;
+     font-size: 24rpx;
+     text-align: center;
+     line-height: 52rpx;
+}
+
+.studys .serve-pass .buy-time{
+    font-size: 24rpx;
+    color: #666666;
+    margin-top:20rpx;
+
+}
+
+.studys .serve-pass .buy-time .buy-time-list{
+    margin-bottom: 20rpx;
+}
+
+.studys .serve-pass .buy-time .buy-time-list text:last-child{
+    color: #FF4545;
+}
+
+/* 正在参加的活动 */
+
+
+.activity .serve-pass .pass-top>text:first-child{
+      margin-right: 20rpx;
+      font-size: 20rpx;
+      width: 62rpx;
+      height: 38rpx;
+      background-color: #FE7878;
+      border-radius: 8rpx;
+      line-height: 38rpx;
+      text-align: center;
+      color: #fff;
+}
+.serveice  .activity .serve-time text{
+     background-color: #E8E8E8;
+     width: 106rpx;
+     height: 38rpx;
+     text-align: center;
+     line-height: 38rpx;
+     border-radius: 8rpx;
+}
+
+ 

@@ -1,0 +1,47 @@
+<view class="page">
+    <view class="buy">
+
+      <!-- 顶部nav导航栏 -->
+        <view class="buy-nav">
+            <scroll-view class=" scroll-w" scroll-x="true" bindscroll="scroll">
+                <view class='p-fx-row' >
+                    <view class="p-fx-col-sa-c scroll-item {{opt==item.id?'scroll-opt':''}} "
+                      wx:for='{{buyNavTitle}}' wx:key='index'  bindtap='BtnOpt' data-sel='{{item.id}}'>
+                        <text class='scroll-item-title'>{{item.title}}</text>
+                        <text class='scroll-item-c'></text>
+                    </view>
+                </view>
+            </scroll-view>
+        </view>
+
+     <!-- 下面显示页 -->
+     
+       <view class='buy-item'>
+           <view class='buy-list' wx:for='{{buys}}' wx:key='index' >
+              <view class='p-fx-row-sb-c list-top'>
+                <text class='list-top-num'>订单编号:{{item.id}}</text>
+                <text>交易成功</text>
+              </view>
+              <view class='p-fx-row-d-c list-title-text'>
+                 <view class='list-image'>
+                     <image src='../../../static/img/yizima.png'></image>
+                 </view>
+                 <view class='p-fx-col-sa list-image-title'>
+                    <text>课程标题课程标题课程标...</text>
+                    <text>实付:¥{{item.price}}</text>
+                    <text>购买日期:{{item.buyTime}}</text>
+                 </view>
+              </view>
+              <view class='p-fx-row-sb-c list-title-time'>
+                 <text>课程时间：剩余{{item.tody}}</text>
+                 <text>{{item.studys}}</text>
+              </view>
+           </view>
+       </view>
+        <view wx:if="{{buys.length == 0}}" class='p-fx-col-d-c iskong'>
+            <image src='../../../static/img/img-kong.png'></image>
+             <text>您还没有购买任何订单！</text>
+        </view>
+
+    </view>
+</view>

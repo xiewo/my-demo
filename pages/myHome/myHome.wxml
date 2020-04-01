@@ -5,11 +5,6 @@
     
         <view class='p-fx-row-d-c home-photo'>
         <!-- 头像 和用户名 -->
-            <view>
-            
-            </view>
-        
-        <!-- 导航小标签 -->
             <image src='../../static/img/photo1.png'></image>  
             <text>用户昵称</text>
         </view>

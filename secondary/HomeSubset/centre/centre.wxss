@@ -1,0 +1,30 @@
+/* 客服中心 */
+
+.centre{
+    height: 100%;
+    background-color: #F5F5F5;
+    padding: 0 40rpx;
+}
+
+
+.centre .centre-top{
+    font-size: 24rpx;
+    color: #999999;
+    padding-top: 40rpx;
+}
+
+/* 两根横线 */
+.centre .centre-top text:first-child{
+    width: 36rpx;
+    border-bottom: 2rpx solid #D9D9D9;
+     margin-right: 30rpx;
+}
+
+.centre .centre-top text:last-child{
+     width: 36rpx;
+    border-bottom: 2rpx solid #D9D9D9;
+     margin-left: 30rpx;
+}
+
+
+

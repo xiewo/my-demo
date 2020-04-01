@@ -22,9 +22,18 @@ Page({
              },
              { id: 3, 
              url: '../../static/img/icon_futongzhi.png', 
-             title: '服务通知' },
-             { id: 4, url: '../../static/img/icon_yigoumai.png', title: '已购买' },
-             { id: 5, url: '../../static/img/icon_kefuzhongxin.png', title: '客服中心' },
+             title: '服务通知',
+            pathUrl: "/secondary/HomeSubset/serveice/serveice",
+              },
+             { id: 4, 
+             url: '../../static/img/icon_yigoumai.png', 
+             title: '已购买', 
+                 pathUrl: "/secondary/HomeSubset/buy/buy"
+             },
+             { id: 5, 
+             url: '../../static/img/icon_kefuzhongxin.png', 
+             title: '客服中心',
+               pathUrl:"/secondary/HomeSubset/centre/centre", },
              { id: 6, url: '../../static/img/icon_tuiguang.png', title: '推广' },
              ]
        
