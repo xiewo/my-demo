@@ -1,0 +1,49 @@
+<view class='page'>
+    <!-- 视频播放区域内容 -->
+    <view class="play-video  ">
+        <video class="myVideo" style='display:block' src="http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400"
+            vslide-gesture-in-fullscreen enable-progress-gesture show-play-btn show-center-play-btn show-progress objectFit="fill" controls show-mute-btn='true'>
+        </video>
+    </view>
+
+
+    <!-- 下面头部及相关信息 -->
+    <view class='play'>
+        <view class='play-item'>
+
+            <view class='p-fx-row-sb-c play-top-title'>
+                <view class='p-fx-col-sb top-title-text'>
+                    <text class='line-clamp'>课程标题课程标题课程标题课程标..</text>
+                    <text>播放次数：226次</text>
+                </view>
+                <view class='p-fx-col-d-c   top-title-h'>
+                    <text class='iconfont icon-wujiaoxingkong'></text>
+                    <text>加入收藏</text>
+                </view>
+            </view>
+            <view class='p-fx-row-d-c play-company'>
+                <image src='../../static/img/xiaotubiao.png'></image>
+                <text>公司出品公司出品</text>
+            </view>
+
+            <!-- 视频部分 -->
+            <view class='play-s'>
+                <!--  上面标题 -->
+                <view class='p-fx-row-sb-c play-s-top'>
+                    <text>课程列表</text>
+                    <view class='p-fx-row-d-c s-top-all'>
+                        <text>全部</text>
+                        <text class='iconfont icon-youjiantou5'></text>
+                    </view>
+
+                </view>
+                <!-- 下面视频 -->
+                <view></view>
+            </view>
+
+
+
+        </view>
+
+    </view>
+</view>

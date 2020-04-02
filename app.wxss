@@ -223,3 +223,15 @@ page {
    /*右浮动*/
    float: right;
 }
+
+
+
+/* 内容显示多少行后面又三个点 */
+  /* 一行 */
+.line-clamp{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}

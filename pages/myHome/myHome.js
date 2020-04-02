@@ -34,7 +34,11 @@ Page({
              url: '../../static/img/icon_kefuzhongxin.png', 
              title: '客服中心',
                pathUrl:"/secondary/HomeSubset/centre/centre", },
-             { id: 6, url: '../../static/img/icon_tuiguang.png', title: '推广' },
+             { id: 6, 
+             url: '../../static/img/icon_tuiguang.png', 
+             title: '推广',
+                 pathUrl: '/secondary/play/play'
+              },
              ]
        
     },
