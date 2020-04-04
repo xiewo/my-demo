@@ -39,7 +39,7 @@
                 </view>
                 <!-- 下面视频 -->
                 <view class='play-s-video'>
-                    <scroll-view scroll-x='true'>
+                    <scroll-view scroll-x='{{true}}' >
                         <view class=' video-item'>
                            
                             <view class='video-image'>
@@ -50,8 +50,8 @@
                                 </view>
 
                             </view>
-                            <view  class=' video-title' >
-                                <text >课程标课程标题课程标题课程标题课程标...</text>
+                            <view  class='video-title' >
+                                <text class='line-clamp'>课程标课程标题课程标题课程标题课程标标题课程标题课程标</text>
                             </view>
                         </view>
                     </scroll-view>
