@@ -135,6 +135,10 @@
     text-align:center; 
 }
 
+.video-image .video-tier .tier2{
+    color: #ddd;
+    border: 1rpx dashed #999;
+}
 
 .video-item .video-title{
     /* width: 224rpx; */
