@@ -1,0 +1,34 @@
+<!-- 我的收藏1 -->
+<view class='page'>
+    <view class='collect' wx:if='{{!isCollect}}'>
+        <view class='collect-list' wx:for='{{collectData}}' wx:key='index'>
+            <view class='collect-item'>
+                <!-- 上部分 -->
+                <view class='p-fx-row-sb-c collect-item-top'>
+                    <text>收藏时间：{{item.dateTimes}}</text>
+                    <text class='iconfont icon-shanchu4' bindtap='BtnTitleDelete' data-index='{{index}}' ></text>
+                </view>
+                <!-- 图片和列表 -->
+                <view class='p-fx-row-d-c collect-item-title'>
+                    <view class='item-title-img'>
+                        <image src='../../../static/img/yizima.png'></image>
+                        <text>{{item.playTitle}}</text>
+                    </view>
+                    <view class='p-fx-col-sb item-title-text'>
+                        <text class='title-text-f'>{{item.caption}}</text>
+                        <text class='title-text-l'>{{item.content}}</text>
+                    </view>
+                </view>
+            </view>
+        </view>
+
+    </view>
+    <view wx:else class='collect-empty'>
+        <view class='p-fx-col-sb-c empty-item'>
+            <image src='../../../static/img/img-kong.png'></image>
+            <text>您还没有收藏任何课</text>
+            <text>您还没有收藏任何课</text>
+        </view>
+    </view>
+
+</view>

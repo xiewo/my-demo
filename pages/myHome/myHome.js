@@ -17,7 +17,7 @@ Page({
              { id: 2,
               url: '../../static/img/icon_wodeshoucang.png',
                title: '我的收藏' ,
-                pathUrl: "/secondary/HomeSubset/collect /collect "
+                pathUrl: "/secondary/HomeSubset/collect/collect"
              
              },
              { id: 3, 

@@ -1,0 +1,105 @@
+/* secondary/HomeSubset/collect/collect.wxss */
+/* 我的收藏  1*/
+
+.collect{
+    height: 100%;
+    padding: 32rpx;
+   background-color: #EBEBEB;
+   
+}
+.collect .collect-list{
+    margin-bottom: 32rpx;
+   
+}
+
+.collect .collect-item{
+    background-color: #fff;
+    padding: 28rpx;
+     border-radius: 8rpx;
+}
+
+.collect-item .collect-item-top{
+    font-size: 28rpx;
+    border-bottom: 2rpx solid #EBEBEB;
+    padding-bottom: 20rpx;
+  
+}
+
+.collect-item .collect-item-top .icon-shanchu4{
+    color: #666;
+}
+
+/* 图片区域样式 */
+.collect-item .collect-item-title{
+    margin-top: 20rpx;
+}
+
+.collect-item-title .item-title-img{
+    margin-right: 28rpx;    
+    position: relative;
+}
+.collect-item-title .item-title-img image{
+    width: 240rpx;
+    height: 136rpx;
+}
+
+
+.collect-item-title .item-title-img text{
+    position: absolute;
+    top: 16rpx;
+    left: 16rpx;
+    font-size: 20rpx;
+    color: #fff;
+    width: 106rpx;
+    height: 38rpx;
+    border-radius: 8rpx;
+    background-color: #b2b2b2;
+    text-align: center;
+    line-height: 38rpx;
+}
+
+
+ .collect-item-title .item-title-text{
+     font-size: 24rpx;
+     color: #666666;
+ }
+
+
+ .item-title-text .title-text-f{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+     font-size: 28rpx;
+     font-weight: bold;
+     margin-bottom: 20rpx;
+     color: #333333;
+ }
+
+
+.item-title-text .title-text-l{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    margin-bottom: 10rpx;
+}
+
+
+/* 没有收藏的状态 */
+
+ .collect-empty{
+   
+    margin-top: 132rpx;
+    background-color: #fff;
+    height: 100%;
+    background:linear-gradient(180deg,rgba(255,255,255,1) 0%,rgba(232,232,232,1) 100%);
+}
+ .collect-empty image{
+     width: 600rpx;
+     height: 600rpx;
+    border: 4rpx  dashed #ddd;
+    margin-bottom: 26rpx;
+}

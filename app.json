@@ -8,6 +8,7 @@
         "pages/firstPage/firstPage",
         "secondary/HomeSubset/history/history",
         "secondary/HomeSubset/serveice/serveice",
+        "secondary/HomeSubset/collect/collect",
         "secondary/HomeSubset/buy/buy",
         "secondary/HomeSubset/centre/centre"
     ],
