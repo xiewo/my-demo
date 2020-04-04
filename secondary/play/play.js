@@ -24,17 +24,16 @@ Page({
      */
     data: {
         src: '',
-        danmuList: [
-            {
-                text: '第 1s 出现的弹幕',
-                color: '#ff0000',
-                time: 1
-            },
-            {
-                text: '第 3s 出现的弹幕',
-                color: '#ff00ff',
-                time: 3
-            }]
+        opt:1, //当前观看视频的id
+        danmuList: [],
+        isBuy:false,  // 判断是否已购买状态
+        list:[
+            {id: 1, title: '课程标题课程标题课程标题课程标..',isSee:true},
+            { id: 2, title: '课程标题课程标题课程标题课程标..', isSee: false },
+            { id: 3, title: '课程标题课程标题课程标题课程标..', isSee: false },
+            { id: 4, title: '课程标题课程标题课程标题课程标..', isSee: false },
+            { id: 5, title: '课程标题课程标题课程标题课程标..', isSee: false },
+        ]
     },
 
     /**
@@ -94,28 +93,13 @@ Page({
     },
 
    
-    inputValue: '',
-    
-    bindInputBlur: function (e) {
-        this.inputValue = e.detail.value
-    },
-    bindButtonTap: function () {
-        var that = this
-        wx.chooseVideo({
-            sourceType: ['album', 'camera'],
-            maxDuration: 60,
-            camera: ['front', 'back'],
-            success: function (res) {
-                that.setData({
-                    src: res.tempFilePath
-                })
-            }
-        })
-    },
-    bindSendDanmu: function () {
-        this.videoContext.sendDanmu({
-            text: this.inputValue,
-            color: getRandomColor()
-        })
+    selBtnClick(e){
+       
+     let id = e.currentTarget.dataset.selid;
+     this.setData({
+         opt:id
+     })
     }
+    
+    
 })

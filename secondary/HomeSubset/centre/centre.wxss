@@ -1,30 +1,148 @@
 /* 客服中心 */
 
-.centre{
-    height: 100%;
-    background-color: #F5F5F5;
-    padding: 0 40rpx;
+
+
+.centre {
+    /* height: 100%; */
+    background-color: #f5f5f5;
+    padding: 30rpx 40rpx;
+    font-size: 24rpx;
+    color: #999;
 }
 
-
-.centre .centre-top{
-    font-size: 24rpx;
-    color: #999999;
-    padding-top: 40rpx;
+.centre .info1 {
+    padding: 40rpx 0;
 }
 
 /* 两根横线 */
-.centre .centre-top text:first-child{
+
+.centre .info1 text:first-child {
     width: 36rpx;
-    border-bottom: 2rpx solid #D9D9D9;
-     margin-right: 30rpx;
+    border-bottom: 2rpx solid #d9d9d9;
+    margin-right: 30rpx;
 }
 
-.centre .centre-top text:last-child{
-     width: 36rpx;
-    border-bottom: 2rpx solid #D9D9D9;
-     margin-left: 30rpx;
+.centre .info1 text:last-child {
+    width: 36rpx;
+    border-bottom: 2rpx solid #d9d9d9;
+    margin-left: 30rpx ;
 }
 
 
 
+/*  info2样式 */
+.centre .info2{
+    padding: 30rpx 0;
+}
+.info2 .color-sel{
+    color: #DE595E;
+}
+
+
+
+/* 这是头像在左边的情况 */
+.info3 .info3-list{
+    padding-top: 30rpx ;
+}
+
+.info3 .info3-list .list-image1{
+    width: 72rpx;
+    height: 72rpx;
+    flex-shrink: 0;
+    margin-right: 20rpx;
+}
+
+/* 名字样式 */
+.info3-list  .list-title .content-uname{
+     font-weight: bold;
+     color: #333;
+     padding-bottom: 12rpx ;
+}
+
+
+/* 发送文本时   文本样式 */
+
+.content-title .content-t-text{
+    width: 504rpx;
+    color: #666;
+    font-size: 28rpx;
+    background-color: #fff;
+    border-radius: 20rpx; 
+    padding: 28rpx;
+}
+
+
+/* 发送的是图片时 图片样式 */
+
+ .content-title  .content-t-image image{
+     width: 504rpx;
+     height: 300rpx;
+ }
+
+
+
+
+/* 这是头像在右边的情况 */
+
+.info3 .right-ed{
+    justify-content: flex-end;
+    padding-top: 30rpx;
+}
+
+.right-ed .list-title .content-uname{
+    float: right; 
+}
+.right-ed .list-title .content-t-text{
+    clear: both;
+}
+
+.info3 .right-ed .list-image2{
+     width: 72rpx;
+    height: 72rpx;
+    flex-shrink: 0;
+    margin-left: 20rpx;
+}
+
+
+
+/* 底部文本框 */
+
+.footer-input{
+    width: 100%;
+    height: 108rpx;
+    background-color: #fff;
+    border-radius: 8rpx;
+    padding: 0 36rpx;
+    box-sizing: border-box;
+}
+
+.footer-input .iconfont {
+    width: 48rpx;
+    height: 48rpx;
+    border: 1rpx dashed #999;
+   line-height: 48rpx;
+   text-align: center;
+}
+
+.footer-input .ipt{
+    width: 468rpx;
+    height: 68rpx;
+    background-color: #F1F1F1;
+    border-radius:12rpx;
+    font-size: 24rpx;
+    flex: 1;
+    margin: 0 16rpx;
+    padding-left: 20rpx;
+}
+
+
+.footer-input .btn{
+    width: 130rpx;
+    height: 68rpx;
+    border-radius: 68rpx;
+    background-color: #49B4B1;
+    padding: 16rpx;
+   font-size: 24rpx;
+    text-align: center;
+ 
+}

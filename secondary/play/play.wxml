@@ -10,7 +10,6 @@
     <!-- 下面头部及相关信息 -->
     <view class='play'>
         <view class='play-item'>
-
             <view class='p-fx-row-sb-c play-top-title'>
                 <view class='p-fx-col-sb top-title-text'>
                     <text class='line-clamp'>课程标题课程标题课程标题课程标..</text>
@@ -39,30 +38,64 @@
                 </view>
                 <!-- 下面视频 -->
                 <view class='play-s-video'>
-                    <scroll-view scroll-x='{{true}}' >
-                        <view class=' video-item'>
-                           
-                            <view class='video-image'>
-                                <image src='../../static/img/yizima.png' />
-                                <view class='p-fx-row-c-c video-tier'>
-                                    <!-- <text class='iconfont icon-bofang3  tier1'>试看</text> -->
-                                    <text class='iconfont icon-lockfill tier2'></text>
-                                </view>
+                    <scroll-view scroll-x='{{true}}'>
+                        <view class='p-fx-row-d-c'>
+                            <view class=' video-item' wx:for='{{list}}' wx:key='index' bindtap='selBtnClick' data-selid='{{item.id}}'>
 
+                                <view class='video-image'>
+                                    <image src='../../static/img/yizima.png' />
+                                    <view class='p-fx-row-c-c video-tier' wx:if='{{!isBuy}}'>
+                                        <text wx:if='{{item.isSee}}' class='iconfont icon-bofang3  tier1'>试看</text>
+                                        <text wx:else class='iconfont icon-lockfill tier2'></text>
+                                    </view>
+
+                                </view>
+                                <view class='video-title'>
+                                    <text class='line-clamp {{opt==item.id && "sel-color"}}'>{{item.title}}</text>
+                                </view>
                             </view>
-                            <view  class='video-title' >
-                                <text class='line-clamp'>课程标课程标题课程标题课程标题课程标标题课程标题课程标</text>
-                            </view>
+
+
                         </view>
+
                     </scroll-view>
                 </view>
-               soe shi dat adf 
-
             </view>
 
 
 
-        </view>
 
+            <!-- 课程简介 -->
+            <view class='play-intro'>
+                <view class='p-fx-col intro-top'>
+                    <text>课程简介</text>
+                    <text>主讲人：</text>
+                </view>
+
+                <view class='p-fx-row-d-c intro-image'>
+                    <image src='../../static/img/touxiang.png' />
+                    <view class='p-fx-col-sb intro-uname'>
+                        <text>讲师名字</text>
+                        <text>高端私人健身专家</text>
+                    </view>
+
+                </view>
+                <view class='intro-title'>
+                    <text>简介：</text>
+                    <view>
+                    课程简介课程简介课程简介课程简介课课程
+                    简介课程简介课程简介课程简介课程简课程简介
+                    课程简介课程简介课程简介课程简课程简介课程
+                    简介课程简介课程简介课程简程简介课程简介课
+                    程简介课程简介课程简课程简介课程简介课程简
+                    介课程简介课程简课程简介课程简介课程简介课
+                    程简介课程简课程简介课程简介课程简介课程简
+                    介课程简课程简介课程简介课程简介课程简介课
+                    程简
+                </view>
+
+                </view>
+            </view>
+        </view>
     </view>
 </view>

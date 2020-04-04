@@ -1,6 +1,8 @@
 {
     "pages": [
         "pages/myHome/myHome",
+        "secondary/HomeSubset/centre/centre",
+        
         "secondary/play/play",
         "pages/index/index",
         "pages/login/login",
@@ -9,8 +11,7 @@
         "secondary/HomeSubset/history/history",
         "secondary/HomeSubset/serveice/serveice",
         "secondary/HomeSubset/collect/collect",
-        "secondary/HomeSubset/buy/buy",
-        "secondary/HomeSubset/centre/centre"
+        "secondary/HomeSubset/buy/buy"
     ],
     "window": {
         "backgroundTextStyle": "dark",

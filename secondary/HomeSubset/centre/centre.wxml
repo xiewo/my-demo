@@ -1,27 +1,68 @@
 <!-- 客服中心 -->
 
-<view class='page'>
-    <view class='centre'>
-      <view class='p-fx-row-c-c centre-top'>
-         <text></text>
-          <text class='top-title'>以上为历史消息</text>
-          <text></text>
-      </view>
+<view class='page p-fx-col'>
+   
+    <scroll-view scroll-y='true' style='height:1000rpx; flex:1; '>
+        <view class='centre' wx:for='{{titleList}}' wx:key='index'>
+            <!-- 判断当数据中有info1这个所有数据都有的类型   如果有我就显示 样式1 -->
+            <view class='p-fx-row-c-c info1' wx:if='{{item.type=="info1"}}'>
+                <text></text>
+                <text class='top-title'>以上为历史消息</text>
+                <text></text>
+            </view>
 
-      <!-- 左边是回复的消息 -->
-      <view>
-          <view>
-          <!-- 这里是回复方头像 -->
-            <image></image>
-          </view>
-          <view>
-            <!-- 这里写时间 和 回复的内容 -->
-          </view>
-      </view>
-       
+            <!-- 同样式1一样的判断       样式2 -->
+            <view class='p-fx-col-c-c info2' wx:if="{{item.type=='info2'}}">
+                <text>您正在接入人工客服，请稍等...</text>
+                <view>
+                    <text>当前有2位用户在排队等候，</text>
+                    <text class='color-sel'>点此处取消排队</text>
+                </view>
+            </view>
+
+            <!-- 最外层的判断和上面一样  不同的是他里面还有不一样的 所以要有第二个判断的类型    样式3 -->
+            <view class='info3' wx:if="{{item.type=='info3'}}">
+
+                <!-- 这里是用第二层 来进一步判断 可以写一个默认的样式，如果第二个条件不满足就会走默认 否则用满足条件的定义好的样式来覆盖之前的样式  -->
+                <view class='p-fx-row info3-list   {{item.direction==2 && "right-ed" }}'>
+
+                    <!-- 这里是回复方头像   可以用上面的条件继续使用来判断 第三层是否要和第二层保持一致-->
+                    <image class='list-image1' src='{{item.unamePhotoUrl}}' wx:if='{{item.direction==1}}' />
+
+                    <!-- 这里是共有的区域 -->
+                    <view class=' list-title'>
+                        <view class='content-uname'>
+                            <text>{{item.uname}}{{item.time}}</text>
+                        </view>
+
+                        <view class='content-title'>
+
+                            <!--到了这一层，还需要用一个属性来继续判断是否是想要的内容  内容纯文本 -->
+                            <!-- 用if来判断如果等于 我就显示这个内容 -->
+                            <view class='content-t-text' wx:if="{{item.msg.type=='text'}}">
+                                <text>{{item.msg.content}}</text>
+                            </view>
+
+                            <!--同上，一样满足条件 显示  内容有图片 -->
+                            <view class='content-t-image' wx:if='{{item.msg.type=="img"}}'>
+                                <image src='{{item.msg.Url}}' mode='widthFix' />
+                            </view>
+                        </view>
+                    </view>
+
+                    <!-- 这个也是同上 -->
+                    <image src='{{item.unamePhotoUrl}}' class='list-image2' wx:if='{{item.direction==2}}' />
+                </view>
+            </view>
+        </view>
+    </scroll-view>
+    <!-- for循环遍历数据 -->
 
 
-       <!-- 右边是发送出去的消息 -->
-       <view></view>
-    </view>      
+    <view class='p-fx-row-d-c footer-input '>
+          <text class='iconfont icon-xiangce1'></text>
+          <input class='ipt' placeholder='请描述您的问题，我们会尽快回复' focus='true'></input>
+          <button class='btn'>发送</button>
+    </view>
+
 </view>
