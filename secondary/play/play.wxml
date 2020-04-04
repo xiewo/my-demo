@@ -38,7 +38,26 @@
 
                 </view>
                 <!-- 下面视频 -->
-                <view></view>
+                <view class='play-s-video'>
+                    <scroll-view scroll-x='true'>
+                        <view class=' video-item'>
+                           
+                            <view class='video-image'>
+                                <image src='../../static/img/yizima.png' />
+                                <view class='p-fx-row-c-c video-tier'>
+                                    <!-- <text class='iconfont icon-bofang3  tier1'>试看</text> -->
+                                    <text class='iconfont icon-lockfill tier2'></text>
+                                </view>
+
+                            </view>
+                            <view  class=' video-title' >
+                                <text >课程标课程标题课程标题课程标题课程标...</text>
+                            </view>
+                        </view>
+                    </scroll-view>
+                </view>
+               soe shi dat adf 
+
             </view>
 
 

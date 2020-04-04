@@ -229,9 +229,14 @@ page {
 /* 内容显示多少行后面又三个点 */
   /* 一行 */
 .line-clamp{
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 1;
-    -webkit-box-orient: vertical;
+  text-overflow:ellipsis;
+
+ overflow:hidden;
+
+ display:-webkit-box;
+
+ -webkit-line-clamp:1;   /*设置要显示省略号的行数*/
+
+ -webkit-box-orient:vertical;
+
 }

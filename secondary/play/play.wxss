@@ -7,7 +7,6 @@
 .play {
     width: 100%;
     height: 100%;
-  
 }
 
 /* 视频的尺寸 */
@@ -18,18 +17,19 @@
 }
 
 /* 文档显示区域的样式 */
-.play .play-item{
+
+.play .play-item {
     margin-top: 28rpx;
     padding: 0 36rpx;
 }
 
 /* 头部说明 */
+
 .play .play-top-title {
-  
     font-size: 24rpx;
     color: #999;
-    padding-bottom: 24rpx; 
-     border-bottom: 2rpx solid #ebebeb;
+    padding-bottom: 24rpx;
+    border-bottom: 2rpx solid #ebebeb;
 }
 
 .play-top-title .top-title-text .line-clamp {
@@ -52,36 +52,107 @@
     color: #666;
 }
 
-
 /* 公司 */
 
-.play-item .play-company{
-   color: #666666;
-   font-size: 28rpx;
-   font-weight: bold;
-   padding: 26rpx 0 ;
-   border-bottom: 2rpx solid #ebebeb;
+.play-item .play-company {
+    color: #666;
+    font-size: 28rpx;
+    font-weight: bold;
+    padding: 26rpx 0;
+    border-bottom: 2rpx solid #ebebeb;
 }
 
-.play-item .play-company image{
+.play-item .play-company image {
     width: 62rpx;
     height: 62rpx;
     margin-right: 24rpx;
 }
 
-.play-item  .play-s{
-   padding: 26rpx 0;
-   font-size: 28rpx;
-   color: #666666;
+.play-item  .play-s {
+    padding: 26rpx 0;
+    font-size: 28rpx;
+    color: #666;
 }
-.play-s .play-s-top>text:first-child{
+
+.play-s .play-s-top {
+    font-weight: bold;
+}
+
+.play-s .play-s-top>text:first-child {
     font-size: 32rpx;
-    font-weight: bold; 
-    color: #333333;
+    color: #333;
 }
 
-.play-s-top .s-top-all .icon-youjiantou5{
-     margin-left: 16rpx;
+.play-s-top .s-top-all .icon-youjiantou5 {
+    margin-left: 16rpx;
 }
 
+
+
+/* 图片设置宽高 */
+.play-s-video{
+    padding-bottom: 40rpx;
+    border-bottom: 1rpx solid red;
+}
+
+
+.play-s-video .video-item {
+    margin-top: 30rpx;
+    width: 240rpx;
+    height:100%;
+   
+}
+ 
+
+ .play-s-video .video-image{
+    position: relative;
+    height: 136rpx;
+}
+
+.play-s-video .video-image image{
+    width: 100%;
+    height: 100%;
+}
+
+.play-s-video .video-image .video-tier{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0 ;
+    left: 0 ;
+    background-color: rgba(0,0,0,0.2);
+    color: #fff;
+    font-size: 20rpx;
+}
+
+.video-image .video-tier .tier1 {
+    font-size: 20rpx;
+    width: 94rpx;   
+    height: 38rpx;
+    background-color: #9FBFFF;
+    border-radius: 8rpx;
+    line-height: 38rpx;
+    text-align:center; 
+}
+
+
+.video-item .video-title{
+    /* width: 224rpx; */
+    font-size: 28rpx;
+    color: #999999;
+   
+}
+
+
+
+/* 视频下面的说明 */
+.video-item .video-title text{
+  overflow : hidden;
+text-overflow: ellipsis;
+display: -webkit-box;
+-webkit-line-clamp: 1;
+-webkit-box-orient: vertical;
+
+
+}
 

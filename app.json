@@ -5,7 +5,6 @@
         "pages/login/login",
         "pages/myHome/myHome",
         "pages/details/details",
-      
         "pages/firstPage/firstPage",
         "secondary/HomeSubset/history/history",
         "secondary/HomeSubset/serveice/serveice",
