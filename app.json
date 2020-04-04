@@ -1,15 +1,14 @@
 {
     "pages": [
+        "pages/myHome/myHome",
         "secondary/play/play",
         "pages/index/index",
         "pages/login/login",
-        "pages/myHome/myHome",
         "pages/details/details",
         "pages/firstPage/firstPage",
         "secondary/HomeSubset/history/history",
         "secondary/HomeSubset/serveice/serveice",
         "secondary/HomeSubset/buy/buy",
-        "secondary/HomeSubset/collect /collect ",
         "secondary/HomeSubset/centre/centre"
     ],
     "window": {
