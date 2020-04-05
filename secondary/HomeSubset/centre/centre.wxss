@@ -63,7 +63,7 @@
 /* 发送文本时   文本样式 */
 
 .content-title .content-t-text{
-    width: 504rpx;
+   max-width: 504rpx;
     color: #666;
     font-size: 28rpx;
     background-color: #fff;

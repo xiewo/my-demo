@@ -55,14 +55,15 @@
                 </view>
             </view>
         </view>
+      
     </scroll-view>
     <!-- for循环遍历数据 -->
 
 
     <view class='p-fx-row-d-c footer-input '>
-          <text class='iconfont icon-xiangce1'></text>
-          <input class='ipt' placeholder='请描述您的问题，我们会尽快回复' focus='true'></input>
-          <button class='btn'>发送</button>
+          <text class='iconfont icon-xiangce1' bindtap='btnImage' ></text>
+          <input class='ipt' placeholder='请描述您的问题，我们会尽快回复' focus='true' bindinput='bindInputValue' />
+          <button class='btn'  bindtap='btnClick' >发送</button>
     </view>
 
 </view>

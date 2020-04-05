@@ -1,10 +1,9 @@
 {
     "pages": [
-        "pages/myHome/myHome",
-        "secondary/HomeSubset/centre/centre",
-        
-        "secondary/play/play",
         "pages/index/index",
+        "secondary/HomeSubset/centre/centre",
+        "pages/myHome/myHome",
+        "secondary/play/play",
         "pages/login/login",
         "pages/details/details",
         "pages/firstPage/firstPage",
